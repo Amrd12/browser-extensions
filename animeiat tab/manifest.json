@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "anime link creator",
+    "version": "1.0",
+    "description": "Make a youtube playlist of a cousrse from https://www.animeiat.tv/",
+    "action": {
+      "default_popup": "./popup.html"
+    },
+    "background": {
+        "service_worker": "./contentScript.js"
+      }
+    ,    
+    "host_permissions": [
+      "*://*/file.html"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["*://*/file.html" , "https://www.animeiat.tv/anime/*"],
+          "js": ["./popup.js" , "./file.js"]
+        }
+      ],
+  "permissions": [ "tabs", "scripting" ]
+}

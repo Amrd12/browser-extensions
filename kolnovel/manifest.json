@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "kolnovel",
+    "version": "1.0",
+    "description": "Make a webpage of chapters from kolnovel",
+    "action": {
+      "default_popup": "./popup.html"
+    },
+    "background": {
+        "service_worker": "./contentScript.js"
+      }
+    ,    
+    "icons":{
+      "128" :"anime.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://www.animeiat.tv/anime/*"],
+          "js": ["./popup.js"]
+        }
+      ],
+  "permissions": [ "tabs"]
+}

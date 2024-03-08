@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "animeiat",
+    "version": "1.0",
+    "description": "Make a clip of episodes from https://www.animeiat.tv/",
+    "action": {
+      "default_popup": "./popup.html"
+    },
+    "background": {
+        "service_worker": "./contentScript.js"
+      }
+    ,    
+    "icons":{
+      "128" :"anime.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://ww1.animeiat.tv/anime/*"],
+          "js": ["./popup.js"]
+        }
+      ],
+  "permissions": [ "tabs"]
+}

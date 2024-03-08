@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Akwam",
+    "version": "1.0",
+    "description": "Make a clip of episodes from Akwam Website",
+    "action": {
+      "default_popup": "./popup.html"
+    },
+    "background": {
+        "service_worker": "./contentScript.js"
+      }
+    ,    
+    "content_scripts": [
+        {
+          "matches": ["https://akwam.im/series/*" ,"https://re.two.re/*"],
+          "js": ["./popup.js"]
+        }
+      ],
+  "permissions": [ "tabs"]
+}

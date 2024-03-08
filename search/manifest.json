@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "search",
+    "version": "1.0",
+    "description": "search for random in Edge",
+    "action": {
+      "default_popup": "./popup.html"
+    },
+    "background": {
+        "service_worker": "./contentScript.js"
+      }
+    ,    
+    "icons":{
+      "128" :"anime.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://www.bing.com/search?q=*"],
+          "js": ["./popup.js"]
+        }
+      ],
+  "permissions": [ "tabs"]
+}

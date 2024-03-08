@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insert Element Before Class</title>
+</head>
+<body>
+
+<div class="target-class">
+  <!-- Content of the target element -->
+</div>
+
+<script>
+// Step 1: Select the element with the target class
+const targetElement = document.querySelector('.target-class');
+
+if (targetElement) {
+  // Step 2: Create the new element you want to insert
+  const newElement = document.createElement('div');
+  newElement.textContent = 'This is the new element';
+
+  // Step 3: Insert the new element before the target element
+  targetElement.parentNode.insertBefore(newElement, targetElement);
+}
+</script>
+
+</body>
+</html>

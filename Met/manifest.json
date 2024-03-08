@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Met Downloader",
+    "version": "1.1",
+    "description": "Make a youtube playlist of a cousrse from https://els-engmet.com/courses/",
+    "action": {
+      "default_popup": "./popup.html"
+    },
+    "background": {
+        "service_worker": "./contentScript.js"
+      }
+    ,    "icons":{
+      "128" :"Met.png"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["https://els-engmet.com/courses/*"],
+          "js": ["./popup.js"]
+        }
+      ],
+  "permissions": ["tabs"]
+}
