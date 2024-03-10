@@ -20,17 +20,15 @@
 <br>
 
 ## About ##
-<p align="center">
-browser extensions
-</p>
+<h1 align = center>browser extensions</h1>
 
 ## Features ##
 
 <pre align="center">
-        akwam extension (akwam folder) : gets the url episodes of sieries in akwam website
-        animeiat extension (animeiat folder) : gets the url episodes of anime in animeiat website
-        Met extension(Met folder) : gets the url episodes of leasons in els-engmet.com
-        search extension(search folder) : search random in bing to get microsoft bing points easily
+       <h5> akwam extension</h5> (akwam folder) : gets the url episodes of sieries in akwam website
+        <h5>animeiat extension</h5> (animeiat folder) : gets the url episodes of anime in animeiat website
+        <h5>Met extension</h5>(Met folder) : gets the url episodes of leasons in els-engmet.com
+        <h5>search extension</h5>(search folder) : search random in bing to get microsoft bing points easily
         the other folders are temps
 </pre>
 
